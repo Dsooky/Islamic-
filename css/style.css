@@ -1,0 +1,200 @@
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|Bellefair|Berkshire+Swash|Changa|Dosis|Droid+Serif|Fresca|Kurale|Lato|Lora|Merriweather|Open+Sans+Condensed:300|PT+Serif|Playfair+Display|Raleway|Ubuntu');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #6B7A84;
+    /*    background: url("https://s16.postimg.org/4d17gd0vp/smbg.png");*/
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.main-header {
+    background: #eee;
+    width: 100%;
+    height: 20em;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    /*    Fonts*/
+    /*    font-family: 'Bellefair', serif;*/
+    /*    font-family: 'Fresca', sans-serif;*/
+    /*    font-family: 'Changa', sans-serif;*/
+    /*    font-family: 'Merriweather', serif;*/
+    /*    font-family: 'Open Sans Condensed', sans-serif;*/
+    /*    font-family: 'Lora', serif;*/
+    /*    font-family: 'Droid Serif', serif;*/
+    /*    font-family: 'Playfair Display', serif;*/
+    /*    font-family: 'Ubuntu', sans-serif;*/
+    /*    font-family: 'PT Serif', serif;*/
+    font-family: 'Kurale', serif;
+    /*    font-family: 'Dosis', sans-serif;*/
+    /*    font-family: 'Anton', sans-serif;*/
+    /*    font-family: 'Berkshire Swash', cursive;*/
+    /*    font-family: 'Lato', sans-serif;*/
+    /*    font-family: 'Raleway', sans-serif;*/
+    /*    font-family: 'Abril Fatface', cursive;*/
+    margin: 0 0 8em 0;
+}
+
+
+/*Navbar*/
+
+.main-header nav {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 90%;
+}
+
+.main-header img {
+    width: 100px;
+    height: 100px;
+    float: left
+}
+
+.main-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3em
+}
+
+.main-header nav ul li {
+    list-style: none;
+    display: inline-block;
+    /*    margin: em;*/
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 9px 0px #d1ded4;
+    transition: 0.2s linear;
+}
+
+.main-header nav ul li:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    );
+    box-shadow: 0 5px 9px 0px #d1ded4;
+}
+
+.main-header nav ul li:active {
+    cursor: pointer;
+    transform: translateY(5px);
+    box-shadow: 0 1px 9px 0px #d1ded4;
+}
+
+
+/*Our News*/
+
+.news {
+    /*     font-family: 'Playfair Display', serif;*/
+    text-align: center;
+    font-size: 1.7em;
+    font-family: 'Kurale', serif;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.news h2 {
+    margin: 1em 0 0 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.news .posts .post {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 5px 20px 0px rgba(167, 167, 167, 0.28);
+    margin: 1em;
+    border-radius: 2%;
+    text-align: left;
+    position: relative;
+}
+
+
+/*.news .posts .post img{}*/
+
+.news .posts .post span {
+    position: absolute;
+    font-family: 'Kurale', serif;
+    font-size: 0.50em;
+    top: 0px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.47);
+    border-radius: 0px 0px 0px 5px;
+    padding: 4px;
+    margin-bottom: 0;
+}
+
+.news .posts .post .details {
+    padding: 5px 0 9px 9px;
+}
+
+.news .posts .post .details h4 {
+    margin-top: 0;
+    font-size: 0.90em;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.news .posts .post p {
+    font-size: 16px;
+    font-family: 'Kurale', serif;
+}
+
+.details-post {
+    font-family: 'Kurale', serif;
+    font-size: 15px;
+    width: 100%;
+    padding: 5px 9px 9px 9px;
+    margin: 13px auto;
+    background: rgba(214, 219, 218, 0.4);
+    overflow: hidden;
+    cursor: help;
+}
+
+.details-post a {
+    padding: 2em 2em 2em 2.2em;
+    transition: 0.2s linear;
+}
+
+.details-post a:hover {
+    background: #fff;
+}
+
+
+/*a */
+
+a,
+a:link,
+a:active,
+a:visited {
+    /* 	color: #7B8C96; */
+    text-decoration: none;
+}
+
+
+/* Scroll Bar*/
+
+body::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: #EEE;
+    background: linear-gradient(to top, #878d90, #878d90);
+}
+
+body::-webkit-scrollbar-thumb {
+    /* 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+    border-radius: 1em;
+}
