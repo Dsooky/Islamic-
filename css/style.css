@@ -9,7 +9,7 @@
 
 body {
     color: #6B7A84;
-    /*    background: url("https://s16.postimg.org/4d17gd0vp/smbg.png");*/
+/*        background: url("https://s16.postimg.org/4d17gd0vp/smbg.png");*/
 }
 
 .container{
@@ -95,7 +95,9 @@ body {
 }
 
 
+
 /*Our News*/
+
 
 .news {
     /*     font-family: 'Playfair Display', serif;*/
@@ -104,12 +106,12 @@ body {
     font-family: 'Kurale', serif;
     font-family: 'Berkshire Swash', cursive;
 }
-
+/*Title of the news division*/
 .news h2 {
     margin: 1em 0 0 0;
     font-family: 'Playfair Display', serif;
 }
-
+/* property of the post box */
 .news .posts .post {
     width: 350px;
     height: 350px;
@@ -125,6 +127,7 @@ body {
 
 /*.news .posts .post img{}*/
 
+/* date & Time Post */
 .news .posts .post span {
     position: absolute;
     font-family: 'Kurale', serif;
@@ -136,29 +139,33 @@ body {
     padding: 4px;
     margin-bottom: 0;
 }
-
+/* Title post &  details */
 .news .posts .post .details {
     padding: 5px 0 9px 9px;
 }
 
+/*Title post*/
 .news .posts .post .details h4 {
     margin-top: 0;
-    font-size: 0.90em;
+    font-size: 0.85em;
     text-align: left;
-    font-family: 'Playfair Display', serif;
+/*    font-family: 'Playfair Display', serif;*/
+     font-family: 'Ubuntu', sans-serif;*/
+
 }
 
+/* Post Foreword */
 .news .posts .post p {
     font-size: 16px;
     font-family: 'Kurale', serif;
 }
-
+/*Comments & eye & loved posts*/
 .details-post {
     font-family: 'Kurale', serif;
     font-size: 15px;
     width: 100%;
     padding: 5px 9px 9px 9px;
-    margin: 13px auto;
+    margin: 45px auto;
     background: rgba(214, 219, 218, 0.4);
     overflow: hidden;
     cursor: help;
@@ -172,6 +179,179 @@ body {
 .details-post a:hover {
     background: #fff;
 }
+
+
+
+/* Start Articles Secction*/
+
+.articles {
+    text-align: center;
+}
+.articles h2 {    
+    margin: 2em 0 2em 0;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5em;
+}
+.articles article {
+    width: 440px;
+    height: 70px;
+    overflow: hidden;
+    background: rgba(218, 235, 222, 0.24);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 1px rgba(135, 141, 144, 0.4);
+    display: inline-block;
+    margin: 1em;
+    
+    background-image: linear-gradient( 135deg, rgba(250, 215, 161, 0.47) 0%, rgba(233, 109, 113, 0.47) 100%);
+}
+
+
+/*image*/
+
+.articles article img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    margin: 0 0.5em 0 0.1em;
+}
+
+
+/*  article Foreword */
+
+.articles article span{
+    display: inline-block;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+
+.articles article p{
+/*    display: inline-block;*/
+    text-overflow: ellipsis;
+        font-family: 'Kurale', serif;
+}
+
+
+.stories{
+	margin: 3em auto;
+	width: 90%;
+	text-align: center;
+	
+
+}
+.item {
+/* 	background: #FFF; */
+	margin: 2em;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	transform: rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	padding:0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 0 auto;
+/*    font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Kurale', serif;
+}
+.item p {
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 20%;
+	left: -27%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	width:130%;
+	text-align:center;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+	
+}
+
+.item:hover {
+	transform: none;
+	transform: scale(1.5);
+	z-index:2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.item:hover > p {
+	transform: none;
+	top: 0;
+	
+}
+
+
+.stories img {
+	width: 100%;
+	height: 100%;
+	transition: 0.3s linear;
+	transform: rotate(-45deg) scale(1.4);
+
+	
+}
+.item:hover > img {
+	transform: none;
+	
+}
+
+p.ar {
+font-family: 'Rakkas', cursive;
+	font-size:1.1em;
+
+}
+
+
+
+
+body::-webkit-scrollbar
+{
+	width: 0.7em;
+	background-color: #EEE;
+}
+
+body::-webkit-scrollbar-thumb{
+/* 	background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+/* 	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+/*   background: linear-gradient(to top, #2193b0, #6dd5ed);  */
+	border-radius:1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2{
+    margin: 2em 0 2em 0;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5em; 
+}
+
+
 
 
 /*a */
